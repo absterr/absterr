@@ -28,14 +28,14 @@ const FormField = ({
         {...register(name)}
         placeholder={placeholder}
         rows={4}
-        className="resize-none w-full border rounded-2xl border-foreground/30 px-3 py-2 font-mono text-xs placeholder-foreground/60 focus:border-foreground/60 focus:outline-none sm:px-4 sm:py-2 sm:text-sm sm:rows-6"
+        className="resize-none w-full border rounded-2xl transition-colors duration-200 border-foreground/30 px-3 py-2 font-mono text-xs placeholder-foreground/60 focus:border-foreground/60 focus:outline-none sm:px-4 sm:py-2 sm:text-sm sm:rows-6"
       />
     ) : (
       <input
         {...register(name)}
         type={type}
         placeholder={placeholder}
-        className="w-full border rounded-xl border-foreground/30 px-3 py-2 font-mono text-xs placeholder-foreground/60 focus:border-foreground/60 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
+        className="w-full border rounded-xl transition-colors duration-200 border-foreground/30 px-3 py-2 font-mono text-xs placeholder-foreground/60 focus:border-foreground/60 focus:outline-none sm:px-4 sm:py-2 sm:text-sm"
       />
     )}
   </div>

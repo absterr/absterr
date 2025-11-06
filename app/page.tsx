@@ -3,7 +3,7 @@ import Contact from "./_Contact";
 import Navbar from "./_Navbar";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import Projects from "./Projects";
+import Projects from "./_Projects";
 
 const Page = () => {
   return (
