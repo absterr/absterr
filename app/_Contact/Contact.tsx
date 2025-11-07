@@ -1,6 +1,5 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import ContactForm from "./ContactForm";
-import Link from "next/link";
 
 const Contact = () => {
   const contactItems = [
@@ -93,14 +92,16 @@ const Contact = () => {
             </h2>
             <div className="flex flex-wrap gap-3 sm:gap-4">
               {socialLinks.map(({ icon: Icon, label, url }) => (
-                <Link
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   key={label}
                   href={url}
                   className="flex h-14 w-14 items-center justify-center rounded-full border border-foreground/30 p-3 hover:bg-foreground/5 transition sm:h-16 sm:w-16 sm:p-4"
                   aria-label={label}
                 >
                   <Icon className="h-6 w-6 text-foreground/90 sm:h-7 sm:w-7" />
-                </Link>
+                </a>
               ))}
             </div>
           </div>

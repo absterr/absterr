@@ -1,5 +1,4 @@
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
 
 const socials = [
   { url: "https://github.com/absterr", label: "Github", icon: Github },
@@ -60,14 +59,16 @@ const Hero = () => (
 
         <div className="flex justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
           {socials.map(({ url, label, icon: Icon }, i) => (
-            <Link
+            <a
               key={i}
               href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 sm:p-3 border-2 rounded-full border-foreground/20 hover:border-foreground transition-colors duration-150 hover:bg-foreground hover:text-background"
               aria-label={label}
             >
               <Icon size={18} className="sm:block" />
-            </Link>
+            </a>
           ))}
         </div>
       </div>

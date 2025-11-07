@@ -1,5 +1,4 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
-import Link from "next/link";
 
 const quickLinks = [
   { href: "#home", label: "HOME" },
@@ -49,13 +48,13 @@ const Footer = () => {
               </h3>
               <div className="space-y-2 font-mono text-sm">
                 {quickLinks.map(({ href, label }) => (
-                  <Link
+                  <a
                     key={label}
                     href={href}
                     className="text-gray-400 hover:text-white transition block"
                   >
                     {label}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -67,7 +66,9 @@ const Footer = () => {
               </h3>
               <div className="flex gap-3 mb-4">
                 {socialLinks.map(({ url, label, icon: Icon }, i) => (
-                  <Link
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     key={i}
                     href={url}
                     className="border border-gray-500 p-3 rounded-full hover:border-white transition"
@@ -76,7 +77,7 @@ const Footer = () => {
                     <span className="text-sm text-gray-400">
                       <Icon />
                     </span>
-                  </Link>
+                  </a>
                 ))}
               </div>
               <p className="text-sm text-gray-400">absterr.dev@gmail.com</p>
@@ -87,12 +88,14 @@ const Footer = () => {
             <p className="text-xs text-gray-500">
               © 2025 ABSTERR.DEV - ALL RIGHTS RESERVED
             </p>
-            <a
-              href="#home"
-              className="border border-gray-500 p-2.5  hover:border-white transition rounded-full"
-            >
-              <span className="text-white">↑</span>
-            </a>
+            <div className="pl-1">
+              <a
+                href="#home"
+                className="border border-gray-500 p-2.5  hover:border-white transition rounded-full"
+              >
+                <span className="text-white">↑</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

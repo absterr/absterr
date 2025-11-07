@@ -2,75 +2,38 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    id: 1,
-    title: "SPA-BOOKING.WEB",
-    image: "/spa-booking-interior-dark.jpg",
+    title: "SCRIB",
+    image:
+      "https://res.cloudinary.com/dlqecula3/image/upload/v1762530830/Screenshot_150_laijzl.png",
     description:
-      "A web application that streamlines spa appointment scheduling for both customers and spa administrators.",
+      "A real-time collaborative platform for creating, editing, and organizing documentation and notes across teams.",
     fullDescription: `
-        A comprehensive spa booking system featuring real-time appointment scheduling, 
-        customer management, and admin dashboard. Customers can browse available services, 
-        view spa professional profiles, and book appointments. Administrators can manage 
-        bookings, staff schedules, and service offerings. The system includes 
-        email notifications and automated reminders.
+      A real-time collaborative platform for creating, editing, and organizing 
+      documentation and notes. Multiple users can work together simultaneously and share 
+      updates instantly. The system ensures smooth synchronization, structured 
+      organization, and an intuitive writing experience designed for both individuals and teams.
       `,
-    stack: ["React", "Node.js", "MongoDB", "Express"],
-    codeUrl: "https://github.com",
-    demoUrl: null,
-    videoDemo: null,
+    stack: ["Next.js", "TypeScript", "Tailwind", "Node.js", "PostgreSQL"],
+    codeUrl: "https://github.com/absterr/scrib",
+    previewUrl: "https://scrib-puce.vercel.app",
+    videoDemo:
+      "https://res.cloudinary.com/dlqecula3/video/upload/v1762532125/Scrib_demo_g7hctj.mp4",
   },
   {
-    id: 2,
-    title: "BLOG.WEB",
-    image: "/news-entertainment-digital-tech.jpg",
+    title: "NODE-AUTH",
+    image: "",
     description:
-      "Blog website where users can read blogs. The blogs are gotten from gnews api",
+      "A secure, session aware authentication system for typescript applications.",
     fullDescription: `
-        A modern blog platform that aggregates news articles from the GNews API. 
-        Features include real-time article updates, category filtering, search functionality, 
-        and responsive design. Users can browse the latest news across multiple categories, 
-        read full articles, and access external links. The application caches articles for optimal performance.
+      A robust typescript authentication service featuring secure user login, session 
+      tracking, and token-based access control. Users can sign in, maintain active 
+      sessions, and refresh access seamlessly. The system ensures reliable security, 
+      smooth authentication flow, and efficient session management across all user interactions.
       `,
-    stack: ["Next.js", "TypeScript", "Tailwind", "Open API"],
-    codeUrl: "https://github.com",
-    demoUrl: "https://blog-demo.com",
-    videoDemo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
-  {
-    id: 3,
-    title: "E-COMMERCE.WEB",
-    image: "/stickers-ecommerce-purple-grid.jpg",
-    description:
-      "An e-commerce platform for selling custom stickers with chosen design tools.",
-    fullDescription: `
-        A full-featured e-commerce platform specializing in custom stickers. Users can 
-        upload their designs or use the built-in design tools to create unique stickers. 
-        The platform integrates Stripe for secure payments, includes a shopping cart system, 
-        order tracking, and customer accounts. Features inventory management and order 
-        fulfillment workflows for administrators.
-        `,
-    stack: ["React", "Stripe", "PostgreSQL", "Express"],
-    codeUrl: "https://github.com",
-    demoUrl: null,
+    stack: ["Node.js", "Typescript", "Express", "PostgreSQL"],
+    codeUrl: "https://github.com/absterr/NodeAuth",
+    previewUrl: null,
     videoDemo: null,
-  },
-  {
-    id: 4,
-    title: "CAFE.WEB",
-    image: "/coffee-cafe-warm-brown.jpg",
-    description:
-      "A cafe website showcasing menu items and ambiance with online ordering capabilities.",
-    fullDescription: `
-        A complete cafe management website with menu showcase, online ordering system, 
-        and table reservation. Features include a digital menu with item descriptions and 
-        images, customer reviews, loyalty program integration, and real-time order status 
-        tracking. The backend manages inventory, staff schedules, and customer preferences 
-        for personalized recommendations.
-        `,
-    stack: ["Next.js", "React", "Tailwind", "Supabase"],
-    codeUrl: "https://github.com",
-    demoUrl: "https://cafe-demo.com",
-    videoDemo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
 ];
 
@@ -92,7 +55,7 @@ const Projects = () => {
       <div className="py-6 md:py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </div>

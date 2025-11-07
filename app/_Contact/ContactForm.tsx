@@ -22,12 +22,13 @@ const ContactForm = () => {
     },
   });
 
-  const { register, handleSubmit } = form;
+  const { register, handleSubmit, reset } = form;
 
   const onSubmit = (userMessage: z.infer<typeof formSchema>) => {
     startTransition(async () => {
       const { success } = await sendMail(userMessage);
       if (success) {
+        reset();
         toast.success("Message sent");
       } else {
         toast.error("Unable to send message");
