@@ -1,4 +1,4 @@
-import About from "./_About";
+import About from "./About";
 import Contact from "./_Contact";
 import Navbar from "./_Navbar";
 import Footer from "./Footer";

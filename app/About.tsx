@@ -1,28 +1,28 @@
-import SkillCard from "./SkillCard";
+import { Code2, Server, Smartphone, Globe } from "lucide-react";
 
 const About = () => {
   const skills = [
     {
-      icon: "<>",
+      icon: Code2,
       title: "FRONTEND",
       tech: "Typescript, React, Next.js, Tailwind CSS",
       description: "Building responsive and interactive user interfaces",
     },
     {
-      icon: "≡",
+      icon: Server,
       title: "BACKEND",
       tech: "Node.js, Express.js, Bun, Hono, PostreSQL",
       description: "Scalable server-side applications and APIs",
     },
     {
-      icon: "□",
+      icon: Smartphone,
       title: "MOBILE APPLICATIONS",
       tech: "ReactNative, Expo",
       description:
         "Building beautiful mobile experiences with native performance",
     },
     {
-      icon: "◯",
+      icon: Globe,
       title: "DEPLOYMENT",
       tech: "Vercel, CI/CD, Github, Render",
       description: "Automated deployment and cloud infrastructure",
@@ -48,8 +48,22 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-12 md:mb-16">
-        {skills.map((skill, i) => (
-          <SkillCard key={i} {...skill} />
+        {skills.map(({ icon: Icon, title, description, tech }, i) => (
+          <div
+            className="border border-foreground/30 p-4 md:p-6 text-center rounded-3xl"
+            key={i}
+          >
+            <div className="text-2xl md:text-3xl font-mono mb-3 text-foreground/80 flex justify-center">
+              <Icon />
+            </div>
+            <h3 className="font-bold text-xs md:text-sm mb-2 tracking-wider">
+              {title}
+            </h3>
+            <p className="text-xs text-foreground/60 mb-3">{tech}</p>
+            <p className="text-xs text-foreground/60 leading-relaxed">
+              {description}
+            </p>
+          </div>
         ))}
       </div>
 
