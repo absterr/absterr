@@ -71,12 +71,10 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     key={i}
                     href={url}
-                    className="border border-gray-500 p-3 rounded-full hover:border-white transition"
+                    className="border border-gray-500 text-gray-400 text-sm p-3 rounded-full hover:text-white hover:border-white transition-colors"
                     aria-label={label}
                   >
-                    <span className="text-sm text-gray-400">
-                      <Icon />
-                    </span>
+                    <Icon />
                   </a>
                 ))}
               </div>

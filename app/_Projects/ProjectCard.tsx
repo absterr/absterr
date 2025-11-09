@@ -47,7 +47,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <div className="p-4 md:p-6 bg-background flex flex-1 flex-col justify-between">
           <button
             onClick={() => setIsOpen(true)}
-            className="font-bold text-base md:text-lg pb-2 md:pb-3 tracking-wide text-center hover:text-green-500 transition cursor-pointer"
+            className="font-bold text-base md:text-lg pb-2 md:pb-3 tracking-wide text-center underline lg:no-underline lg:hover:underline hover:text-green-500 transition-all duration-150 cursor-pointer"
           >
             {project.title}
           </button>
@@ -122,9 +122,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           {/* Full Description */}
           <div>
             <h3 className="font-bold text-lg pb-2">About This Project</h3>
-            <p className="text-foreground/70 text-sm leading-relaxed pb-6">
-              {project.fullDescription}
-            </p>
+            <div
+              className="text-foreground/70 text-sm leading-relaxed pb-6"
+              dangerouslySetInnerHTML={{ __html: project.fullDescription }}
+            />
           </div>
 
           {/* Tech Stack */}

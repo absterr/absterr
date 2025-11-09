@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import CopyButton from "../CopyButton";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
@@ -16,7 +17,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "LOCATION",
-      value: "Kubwa, Abuja",
+      value: "localhost:8080",
     },
   ];
 
@@ -66,21 +67,24 @@ const Contact = () => {
             <h2 className="mb-4 font-mono text-base font-bold sm:mb-6 sm:text-lg">
               GET IN TOUCH
             </h2>
-            <div className="space-y-3 sm:space-y-4">
-              {contactItems.map(({ icon: Icon, label, value }) => (
+            <div className="flex flex-col gap-y-4">
+              {contactItems.map(({ icon: Icon, label, value }, i) => (
                 <div
                   key={label}
-                  className="flex gap-3 border border-foreground/30 p-3 sm:gap-4 sm:p-4 rounded-2xl"
+                  className="flex items-center justify-between p-3 sm:p-4 rounded-3xl border border-foreground/30"
                 >
-                  <Icon className="h-5 w-5 shrink-0 text-foreground/90 sm:h-6 sm:w-6" />
-                  <div className="min-w-0">
-                    <p className="font-mono text-xs text-foreground/60 uppercase">
-                      {label}
-                    </p>
-                    <p className="truncate font-mono text-xs sm:text-sm">
-                      {value}
-                    </p>
+                  <div className="flex gap-3 sm:gap-4 items-center">
+                    <Icon className="h-5 w-5 shrink-0 text-foreground/90 sm:h-6 sm:w-6" />
+                    <div className="min-w-0">
+                      <p className="font-mono text-xs text-foreground/60 uppercase">
+                        {label}
+                      </p>
+                      <p className="truncate font-mono text-xs sm:text-sm">
+                        {value}
+                      </p>
+                    </div>
                   </div>
+                  {i < 2 && <CopyButton value={value} />}
                 </div>
               ))}
             </div>

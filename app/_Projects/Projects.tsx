@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-
 const projects = [
   {
     title: "SCRIB",
@@ -29,6 +28,12 @@ const projects = [
       tracking, and token-based access control. Users can sign in, maintain active 
       sessions, and refresh access seamlessly. The system ensures reliable security, 
       smooth authentication flow, and efficient session management across all user interactions.
+      There's also a react app that demonstrate how developers can best implement 
+      NodeAuth with their client application. <a href="https://github.com/absterr/AuthClient"
+      target="_blank" rel="noopener noreferrer"
+      style="color:#22c55e; text-decoration:underline;">
+      Click here for more.
+      </a> 
       `,
     stack: ["Node.js", "Typescript", "Express", "PostgreSQL"],
     codeUrl: "https://github.com/absterr/NodeAuth",
