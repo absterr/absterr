@@ -32,7 +32,7 @@ const Hero = () => (
         </div>
 
         <p className="text-center text-xs sm:text-sm md:text-base text-foreground/60 tracking-widest mb-6 sm:mb-8">
-          &gt; <Typewriter text="FULL-STACK DEVELOPER" />
+          &gt; <Typewriter text="FULL-STACK DEVELOPER" />_
         </p>
 
         <div className="text-center mb-8 sm:mb-10 text-sm sm:text-base leading-relaxed text-foreground/70">
@@ -50,10 +50,7 @@ const Hero = () => (
         </div>
 
         <div className="flex justify-center gap-3 sm:gap-4 mb-10 sm:mb-12">
-          <a
-            className="px-6 sm:px-8 py-2 sm:py-3 bg-foreground text-background font-semibold text-xs sm:text-sm hover:bg-foreground/70 hover:cursor-pointer transition-colors duration-150 rounded-3xl"
-            href="#projects"
-          >
+          <a className="flex items-center px-6 sm:px-8 py-2 sm:py-3 bg-foreground text-background font-semibold text-xs sm:text-sm hover:bg-foreground/70 hover:cursor-pointer transition-colors duration-150 rounded-3xl">
             VIEW PROJECTS
           </a>
           <a className="px-6 sm:px-8 py-2 sm:py-3 bg-background text-foreground border-2 border-foreground font-semibold text-xs sm:text-sm hover:bg-foreground hover:cursor-pointer hover:text-background transition-colors duration-150 rounded-3xl">

@@ -1,4 +1,5 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
+import { X } from "@/components/SocialIcons";
 
 const quickLinks = [
   { href: "#home", label: "HOME" },
@@ -15,7 +16,7 @@ const socialLinks = [
     label: "LinkedIn",
     url: "https://linkedin.com/in/abba-is-haq-b14579321",
   },
-  { icon: Twitter, label: "𝕏", url: "https://x.com/_absterr" },
+  { icon: X, label: "𝕏", url: "https://x.com/_absterr" },
 ];
 
 const Footer = () => {

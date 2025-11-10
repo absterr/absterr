@@ -1,6 +1,7 @@
-import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
-import CopyButton from "../CopyButton";
+import { WhatsApp, X } from "@/components/SocialIcons";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "./ContactForm";
+import CopyButton from "./CopyButton";
 
 const Contact = () => {
   const contactItems = [
@@ -33,9 +34,14 @@ const Contact = () => {
       url: "https://linkedin.com/in/abba-is-haq-b14579321",
     },
     {
-      icon: Twitter,
+      icon: X,
       label: "X",
       url: "https://x.com/_absterr",
+    },
+    {
+      icon: WhatsApp,
+      label: "WhatsApp",
+      url: "http://wa.me/2348147564810",
     },
   ];
 
@@ -62,7 +68,7 @@ const Contact = () => {
           <ContactForm />
         </div>
 
-        <div className="flex flex-col justify-between h-full space-y-6 sm:space-y-8">
+        <div className="flex flex-col justify-between h-full gap-y-6 sm:gap-y-8">
           <div>
             <h2 className="mb-4 font-mono text-base font-bold sm:mb-6 sm:text-lg">
               GET IN TOUCH
@@ -71,7 +77,7 @@ const Contact = () => {
               {contactItems.map(({ icon: Icon, label, value }, i) => (
                 <div
                   key={label}
-                  className="flex items-center justify-between p-3 sm:p-4 rounded-3xl border border-foreground/30"
+                  className="flex items-center justify-between p-3 sm:p-4 rounded-2xl border border-foreground/30"
                 >
                   <div className="flex gap-3 sm:gap-4 items-center">
                     <Icon className="h-5 w-5 shrink-0 text-foreground/90 sm:h-6 sm:w-6" />
