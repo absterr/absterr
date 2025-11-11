@@ -12,7 +12,14 @@ const projects = [
       updates instantly. The system ensures smooth synchronization, structured 
       organization, and an intuitive writing experience designed for both individuals and teams.
       `,
-    stack: ["Next.js", "TypeScript", "Tailwind", "Node.js", "PostgreSQL"],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Node.js",
+      "PostgreSQL",
+      "DrizzleORM",
+    ],
     codeUrl: "https://github.com/absterr/scrib",
     previewUrl: "https://scrib-puce.vercel.app",
     videoDemo:
@@ -35,7 +42,7 @@ const projects = [
       Click here for more.
       </a> 
       `,
-    stack: ["Node.js", "Typescript", "Express", "PostgreSQL"],
+    stack: ["Node.js", "Typescript", "Express", "PostgreSQL", "Sequelize"],
     codeUrl: "https://github.com/absterr/NodeAuth",
     previewUrl: null,
     videoDemo: null,
