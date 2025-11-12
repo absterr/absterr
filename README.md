@@ -55,5 +55,6 @@ Hey. I'm **Abba Is'haq**, a **Full-stack web developer** building sleek, perform
 | **[NodeAuth](https://github.com/absterr/nodeauth)**<br>Session-aware TypeScript authentication system. | <img src="https://img.shields.io/badge/TypeScript-%23007ACC.svg?logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Express-404D59?logo=express&logoColor=white" alt="Express" /> <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=white" alt="Sequelize" /> | [![View](https://img.shields.io/badge/View-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/absterr/nodeauth) [![Star](https://img.shields.io/badge/Star-yellow?style=for-the-badge&logo=github&logoColor=white)](https://github.com/absterr/nodeauth/stargazers) [![Fork](https://img.shields.io/badge/Fork-gray?style=for-the-badge&logo=github&logoColor=white)](https://github.com/absterr/nodeauth/fork) |
 
 > If you want a project preview/demo, check out my portfolio at **[Absterr](https://absterr.vercel.dev)**.
+> Happy hunting!
 
 ---
