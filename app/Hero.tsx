@@ -51,13 +51,13 @@ const Hero = () => (
 
         <div className="flex justify-center gap-3 sm:gap-4 mb-10 sm:mb-12">
           <a
-            className="flex items-center px-6 sm:px-8 py-2 sm:py-3 bg-foreground text-background font-semibold text-xs sm:text-sm hover:bg-foreground/70 hover:cursor-pointer transition-colors duration-150 rounded-3xl"
+            className="flex items-center px-6 sm:px-8 py-2 sm:py-3 bg-foreground text-background font-semibold text-xs sm:text-sm hover:bg-foreground/70 hover:cursor-pointer lg:transition-colors duration-150 rounded-3xl"
             href="#projects"
           >
             VIEW PROJECTS
           </a>
           <a
-            className="px-6 sm:px-8 py-2 sm:py-3 bg-background text-foreground border-2 border-foreground font-semibold text-xs sm:text-sm hover:bg-foreground hover:cursor-pointer hover:text-background transition-colors duration-150 rounded-3xl"
+            className="px-6 sm:px-8 py-2 sm:py-3 bg-background text-foreground border-2 border-foreground font-semibold text-xs sm:text-sm hover:bg-foreground hover:cursor-pointer hover:text-background lg:transition-colors duration-150 rounded-3xl"
             download
             href="absterr_resume.pdf"
           >
