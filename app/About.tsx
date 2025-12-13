@@ -24,7 +24,7 @@ const About = () => {
     {
       icon: Globe,
       title: "DEPLOYMENT",
-      tech: "Vercel, CI/CD, Github, Render",
+      tech: "CI/CD, Github, Docker, Vercel, Render",
       description: "Automated deployment and cloud infrastructure",
     },
   ];
