@@ -43,6 +43,7 @@ Hey. I'm **Abba Is'haq**, a **Full-stack web developer** building sleek, perform
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/DrizzleORM-0A0A0A?logo=drizzle&logoColor=white" alt="Drizzle ORM" />
   <img src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=white" alt="Sequelize" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" />
 </p>
 
 ---
