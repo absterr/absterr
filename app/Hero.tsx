@@ -59,7 +59,7 @@ const Hero = () => (
           <a
             className="px-6 sm:px-8 py-2 sm:py-3 bg-background text-foreground border-2 border-foreground font-semibold text-xs sm:text-sm hover:bg-foreground hover:cursor-pointer hover:text-background lg:transition-colors duration-150 rounded-3xl"
             download
-            href="absterr_resume.pdf"
+            href="Abba_resume.pdf"
           >
             DOWNLOAD CV
           </a>
