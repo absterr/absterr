@@ -34,7 +34,7 @@ const Navbar = () => {
       {
         root: null,
         threshold: 0.5, // SECTION IS AT LEAST 50% VISIBLE
-      }
+      },
     );
 
     sections.forEach((section) => observer.observe(section));
