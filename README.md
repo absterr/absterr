@@ -1,6 +1,6 @@
 # 👋 Howdy? Absterr here!
 
-Hey. I'm **Abba Is'haq**, a **Full-stack web developer** building sleek, performant applications.
+Hey. I'm **Abba Is'haq**, a **Full-stack developer** building sleek, performant applications.
 
 <!-- Social / Contact -->
 
