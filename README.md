@@ -29,15 +29,17 @@ Hey. I'm **Abba Is'haq**, a **Full-stack developer** building sleek, performant 
   <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
-  <img src="https://img.shields.io/badge/Bun-%23ffcb2b.svg?logo=bun&logoColor=000" alt="Bun" />
-  <img src="https://img.shields.io/badge/Hono-%23353A4F.svg?logo=vercel&logoColor=white&labelColor=2b2b2b" alt="Hono" />
+  <img src="https://img.shields.io/badge/React%20Native-%2361DAFB.svg?logo=react&logoColor=black" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-1B1F23?logo=expo&logoColor=white" alt="Expo" />
 </p>
 
 <p align="center">
   <!-- Row 2 -->
 
   <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js" />
+    <img src="https://img.shields.io/badge/Bun-%23ffcb2b.svg?logo=bun&logoColor=000" alt="Bun" />
   <img src="https://img.shields.io/badge/Express-404D59?logo=express&logoColor=white" alt="Express" />
+    <img src="https://img.shields.io/badge/Hono-%23353A4F.svg?logo=vercel&logoColor=white&labelColor=2b2b2b" alt="Hono" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/DrizzleORM-0A0A0A?logo=drizzle&logoColor=white" alt="Drizzle ORM" />
   <img src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=white" alt="Sequelize" />
