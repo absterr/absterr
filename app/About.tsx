@@ -40,10 +40,10 @@ const About = () => {
         </h1>
         <div className="w-16 md:w-24 h-1 bg-green-500 mx-auto mb-6 md:mb-8"></div>
         <p className="text-xs md:text-sm leading-relaxed max-w-2xl mx-auto text-foreground/70 px-2">
-          I&apos;m a software developer and currently I primarily write
+          I&apos;m a software developer and currently, I primarily write
           Typescript. I like to mess around at my convenience, only when I deem
           it inconsequential. I often dabble with software on the client and
-          server side. Ultimately I aim to solve problems and deliver value. I
+          server side. Ultimately, I aim to solve problems and deliver value. I
           also love Japanese manga.
         </p>
       </div>

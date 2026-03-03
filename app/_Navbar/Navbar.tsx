@@ -1,20 +1,20 @@
-"use client";
-import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
-import { ThemeToggle } from "./ThemeToggle";
+'use client';
+import { Menu, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ThemeToggle } from './ThemeToggle';
 
 const Navbar = () => {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState('home');
   const [isOpen, setOpen] = useState(false);
 
-  const navItems = ["About", "Projects", "Contact"];
+  const navItems = ['About', 'Projects', 'Contact'];
 
   const handleNavClick = (id: string) => {
     setActive(id);
     setOpen(false);
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -34,21 +34,21 @@ const Navbar = () => {
       {
         root: null,
         threshold: 0.5, // SECTION IS AT LEAST 50% VISIBLE
-      },
+      }
     );
 
     sections.forEach((section) => observer.observe(section));
     const handleScrollTop = () => {
       if (window.scrollY < window.innerHeight * 0.2) {
-        setActive("home");
+        setActive('home');
       }
     };
 
-    window.addEventListener("scroll", handleScrollTop);
+    window.addEventListener('scroll', handleScrollTop);
 
     return () => {
       observer.disconnect();
-      window.removeEventListener("scroll", handleScrollTop);
+      window.removeEventListener('scroll', handleScrollTop);
     };
   }, []);
 
@@ -60,7 +60,7 @@ const Navbar = () => {
             <ThemeToggle />
             <button
               className="text-sm md:text-md lg:text-lg text-foreground hover:cursor-pointer"
-              onClick={() => handleNavClick("home")}
+              onClick={() => handleNavClick('home')}
             >
               ABSTERR.DEV
             </button>
@@ -71,10 +71,10 @@ const Navbar = () => {
               <button
                 key={item}
                 onClick={() => handleNavClick(item.toLowerCase())}
-                className={`text-xs font-semibold tracking-wide transition-all ${
+                className={`text-xs cursor-pointer font-semibold tracking-wide transition-all ${
                   active === item.toLowerCase()
-                    ? "text-foreground border-b-2 border-teal-500"
-                    : "text-foreground/60 hover:text-foreground"
+                    ? 'text-foreground border-b-2 border-teal-500'
+                    : 'text-foreground/60 hover:text-foreground'
                 }`}
               >
                 {item.toUpperCase()}
@@ -100,8 +100,8 @@ const Navbar = () => {
                   }}
                   className={`block w-full text-left text-sm font-semibold tracking-wide py-2 transition-all ${
                     active === item.toLowerCase()
-                      ? "text-foreground border-b-2 border-teal-500 pl-3"
-                      : "text-foreground/60 hover:text-foreground pl-2"
+                      ? 'text-foreground border-b-2 border-teal-500 pl-3'
+                      : 'text-foreground/60 hover:text-foreground pl-2'
                   }`}
                 >
                   {item}
