@@ -1,14 +1,14 @@
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
-import Typewriter from "./Typewriter";
+import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import Typewriter from './Typewriter';
 
 const socials = [
-  { url: "https://github.com/absterr", label: "Github", icon: Github },
+  { url: 'https://github.com/absterr', label: 'Github', icon: Github },
   {
-    url: "https://linkedin.com/in/abba-is-haq-b14579321",
-    label: "LinkedIn",
+    url: 'https://linkedin.com/in/abba-is-haq-b14579321',
+    label: 'LinkedIn',
     icon: Linkedin,
   },
-  { url: "mailto:absterr.dev@gmail.com", label: "Mail", icon: Mail },
+  { url: 'mailto:absterr.dev@gmail.com', label: 'Mail', icon: Mail },
 ];
 
 const Hero = () => (
@@ -17,8 +17,8 @@ const Hero = () => (
       className="absolute inset-0 pointer-events-none"
       style={{
         backgroundImage: `linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px)`,
-        backgroundColor: "var(--grid-bg)",
-        backgroundSize: "50px 50px",
+        backgroundColor: 'var(--grid-bg)',
+        backgroundSize: '50px 50px',
       }}
     ></div>
     <header className="relative z-10 pt-24 sm:pt-28 md:pt-32 min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
@@ -37,15 +37,11 @@ const Hero = () => (
 
         <div className="text-center mb-8 sm:mb-10 text-sm sm:text-base leading-relaxed text-foreground/70">
           <p>
-            Hi, my name is{" "}
+            Hi, my name is{' '}
             <span className="bg-foreground text-sm text-background px-2 py-1 inline-block rounded-2xl">
-              Abba Is'haq
-            </span>{" "}
-            — I am a software developer who loves turning ideas into real,
-            working products. Driven by dedication and a passion for innovation,
-            I&apos;m constantly exploring, experimenting, and pushing myself to
-            build things that don&apos;t just work, but feel intuitive and make
-            a lasting impression.
+              Abba Is&apos;haq
+            </span>{' '}
+            — I solve problems with my computer.
           </p>
         </div>
 

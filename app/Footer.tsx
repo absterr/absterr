@@ -1,22 +1,22 @@
-import { Github, Linkedin } from "lucide-react";
-import { X } from "@/components/SocialIcons";
+import { Github, Linkedin } from 'lucide-react';
+import { X } from '@/components/SocialIcons';
 
 const quickLinks = [
-  { href: "#home", label: "HOME" },
-  { href: "#about", label: "ABOUT" },
-  { href: "#experience", label: "EXPERIENCE" },
-  { href: "#projects", label: "PROJECTS" },
-  { href: "#contact", label: "CONTACT" },
+  { href: '#home', label: 'HOME' },
+  { href: '#about', label: 'ABOUT' },
+  { href: '#experience', label: 'EXPERIENCE' },
+  { href: '#projects', label: 'PROJECTS' },
+  { href: '#contact', label: 'CONTACT' },
 ];
 
 const socialLinks = [
-  { icon: Github, label: "Github", url: "https://github.com/absterr" },
+  { icon: Github, label: 'Github', url: 'https://github.com/absterr' },
   {
     icon: Linkedin,
-    label: "LinkedIn",
-    url: "https://linkedin.com/in/abba-is-haq-b14579321",
+    label: 'LinkedIn',
+    url: 'https://linkedin.com/in/abba-is-haq-b14579321',
   },
-  { icon: X, label: "𝕏", url: "https://x.com/_absterr" },
+  { icon: X, label: '𝕏', url: 'https://x.com/_absterr' },
 ];
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px)`,
-          backgroundSize: "50px 50px",
+          backgroundSize: '50px 50px',
         }}
       ></div>
       <div className="bg-black text-white border-t border-gray-700">
@@ -38,7 +38,8 @@ const Footer = () => {
                 ABSTERR.DEV
               </h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Dedicated to building projects that engage and inspire.
+                I unravel mortal quandaries by means of mine own engine of
+                computation.
               </p>
             </div>
 
