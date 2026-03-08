@@ -8,7 +8,7 @@ const socials = [
     label: 'LinkedIn',
     icon: Linkedin,
   },
-  { url: 'mailto:absterr.dev@gmail.com', label: 'Mail', icon: Mail },
+  { url: 'mailto:misterabsterr@gmail.com', label: 'Mail', icon: Mail },
 ];
 
 const Hero = () => (

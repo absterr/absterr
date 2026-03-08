@@ -8,7 +8,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'EMAIL',
-      value: 'absterr.dev@gmail.com',
+      value: 'misterabsterr@gmail.com',
     },
     {
       icon: Phone,
@@ -51,7 +51,8 @@ const Contact = () => {
         </h1>
         <div className="w-16 md:w-24 h-1 bg-green-500 mx-auto mb-6 md:mb-8"></div>
         <p className="mx-auto max-w-2xl font-mono text-xs text-foreground/60 sm:text-sm">
-          Got an idea in mind? Let's collaborate and build something remarkable.
+          Got an idea in mind? Let&apos;s collaborate and build something
+          remarkable.
         </p>
       </div>
 
