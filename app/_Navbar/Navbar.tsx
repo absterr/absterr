@@ -12,8 +12,6 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
   const handleNavClick = (id: string) => {
-    setActive(id);
-    setOpen(false);
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -102,7 +100,6 @@ const Navbar = () => {
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="md:hidden"
             >
