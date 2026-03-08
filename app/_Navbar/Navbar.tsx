@@ -33,7 +33,7 @@ const Navbar = () => {
       },
       {
         root: null,
-        threshold: 0.5, // SECTION IS AT LEAST 50% VISIBLE
+        rootMargin: '-30% 0px -60% 0px',
       }
     );
 
@@ -65,7 +65,10 @@ const Navbar = () => {
             <ThemeToggle />
             <button
               className="text-sm md:text-md lg:text-lg text-foreground hover:cursor-pointer"
-              onClick={() => handleNavClick('home')}
+              onClick={() => {
+                handleNavClick('home');
+                setOpen(false);
+              }}
             >
               ABSTERR.DEV
             </button>
