@@ -2,12 +2,13 @@
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { ThemeToggle } from './ThemeToggle';
+import { cn } from '@/lib/utils';
+
+const navItems = ['About', 'Projects', 'Contact'];
 
 const Navbar = () => {
   const [active, setActive] = useState('home');
   const [isOpen, setOpen] = useState(false);
-
-  const navItems = ['About', 'Projects', 'Contact'];
 
   const handleNavClick = (id: string) => {
     setActive(id);
@@ -53,9 +54,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <>
-      <nav className="fixed top-10 w-full max-w-xs font-mono md:max-w-2xl lg:max-w-3xl z-50">
-        <div className="px-4 py-2 md:px-6 md:py-4 lg:px-8 lg:py-6 flex justify-between backdrop-blur-sm items-center border border-foreground/10 rounded-full">
+    <nav className="fixed top-10 w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-3xl z-50">
+      <div
+        className={cn(
+          'backdrop-blur-sm border border-foreground/10',
+          isOpen ? 'rounded-4xl' : 'rounded-full'
+        )}
+      >
+        <div className="px-4 py-2 md:px-6 md:py-4 lg:px-8 lg:py-5 flex justify-between items-center">
           <div className="flex gap-3 items-center">
             <ThemeToggle />
             <button
@@ -89,7 +95,7 @@ const Navbar = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden backdrop-blur-sm">
+          <div className="md:hidden">
             <div className="px-4 py-4 flex flex-col gap-3">
               {navItems.map((item) => (
                 <button
@@ -110,8 +116,8 @@ const Navbar = () => {
             </div>
           </div>
         )}
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 

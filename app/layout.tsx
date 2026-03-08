@@ -1,21 +1,21 @@
-import { ThemeProvider } from "@/lib/theme-provider";
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Toaster } from "sonner";
-import "./globals.css";
+import { ThemeProvider } from '@/lib/theme-provider';
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import { Toaster } from 'sonner';
+import './globals.css';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Absterr",
+  title: 'Absterr',
   description: "This is the portfolio of Abba Is'haq",
 };
 
@@ -37,9 +37,9 @@ export default function RootLayout({
             toastOptions={{
               classNames: {
                 toast:
-                  "rounded-2xl shadow-md border text-sm font-mono bg-background",
-                success: "bg-green-100 border-green-500 text-green-800",
-                error: "bg-red-100 border-red-500 text-red-800",
+                  'rounded-2xl shadow-md border text-sm font-mono bg-background',
+                success: 'bg-green-100 border-green-500 text-green-800',
+                error: 'bg-red-100 border-red-500 text-red-800',
               },
             }}
           />
