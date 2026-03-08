@@ -1,8 +1,9 @@
 'use client';
+import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { ThemeToggle } from './ThemeToggle';
-import { cn } from '@/lib/utils';
 
 const navItems = ['About', 'Projects', 'Contact'];
 
@@ -57,7 +58,7 @@ const Navbar = () => {
     <nav className="fixed top-10 w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-3xl z-50">
       <div
         className={cn(
-          'backdrop-blur-sm border border-foreground/10',
+          'bg-background/20 backdrop-blur-sm border border-foreground/10',
           isOpen ? 'rounded-4xl' : 'rounded-full'
         )}
       >
@@ -87,35 +88,45 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-          <button
+          <motion.button
+            animate={{ rotate: isOpen ? 90 : 0 }}
+            transition={{ duration: 0.2 }}
             onClick={() => setOpen(!isOpen)}
             className="md:hidden p-2 hover:bg-black/5 transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          </motion.button>
         </div>
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-4 py-4 flex flex-col gap-3">
-              {navItems.map((item) => (
-                <button
-                  key={item}
-                  onClick={() => {
-                    handleNavClick(item.toLowerCase());
-                    setOpen(false);
-                  }}
-                  className={`block w-full text-left text-sm font-semibold tracking-wide py-2 transition-all ${
-                    active === item.toLowerCase()
-                      ? 'text-foreground border-b-2 border-teal-500 pl-3'
-                      : 'text-foreground/60 hover:text-foreground pl-2'
-                  }`}
-                >
-                  {item}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="md:hidden"
+            >
+              <div className="px-4 py-4 flex flex-col gap-3">
+                {navItems.map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => {
+                      handleNavClick(item.toLowerCase());
+                      setOpen(false);
+                    }}
+                    className={`block w-full text-left text-sm font-semibold tracking-wide py-2 transition-all ${
+                      active === item.toLowerCase()
+                        ? 'text-foreground border-b-2 border-teal-500 pl-3'
+                        : 'text-foreground/60 hover:text-foreground pl-2'
+                    }`}
+                  >
+                    {item}
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
