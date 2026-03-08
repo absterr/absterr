@@ -92,7 +92,7 @@ const Navbar = () => {
             animate={{ rotate: isOpen ? 90 : 0 }}
             transition={{ duration: 0.2 }}
             onClick={() => setOpen(!isOpen)}
-            className="md:hidden p-2 hover:bg-black/5 transition-colors"
+            className="md:hidden hover:bg-transparent"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </motion.button>
