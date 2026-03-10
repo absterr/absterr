@@ -56,8 +56,7 @@ const projectsInfo = [
       A personalized learning roadmap generator designed to help users build clear,
       goal-driven learning paths. The platform analyzes user goals, current skill level,
       and time availability to generate structured roadmaps with milestones, resources,
-      and progress tracking. Roadmaps adapt over time based on progress and feedback,
-      making it easier for individuals to stay focused and learn efficiently.
+      and progress tracking.
     `,
     stack: [
       'Node.js',

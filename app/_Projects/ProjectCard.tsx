@@ -1,13 +1,13 @@
-"use client";
-import { Button } from "@/components/ui/button";
+'use client';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
-import { Code2, ExternalLink } from "lucide-react";
-import { useState } from "react";
+} from '@/components/ui/dialog';
+import { Code2, ExternalLink } from 'lucide-react';
+import { useState } from 'react';
 
 interface ProjectCardProps {
   project: {
@@ -27,8 +27,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const imageUrl = project.previewUrl
     ? project.image
     : `https://opengraph.githubassets.com/1/${project.codeUrl.replace(
-        "https://github.com/",
-        ""
+        'https://github.com/',
+        ''
       )}`;
 
   return (
@@ -121,9 +121,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
           {/* Full Description */}
           <div>
-            <h3 className="font-bold text-lg pb-2">About This Project</h3>
+            <h3 className="font-bold text-base md:text-lg">
+              About This Project
+            </h3>
             <div
-              className="text-foreground/70 text-sm leading-relaxed pb-6"
+              className="text-foreground/70 text-xs md:text-sm leading-relaxed py-4"
               dangerouslySetInnerHTML={{ __html: project.fullDescription }}
             />
           </div>
