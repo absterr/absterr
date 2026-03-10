@@ -7,6 +7,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Code2, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 import { useState } from 'react';
 
 interface ProjectCardProps {
@@ -36,10 +37,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="border border-foreground/30 overflow-hidden hover:shadow-md transition rounded-3xl flex flex-col">
         {/* Project Image Container */}
         <div className="relative h-32 md:h-48 bg-foreground/10 overflow-hidden group">
-          <img
+          <Image
             src={imageUrl}
             alt={project.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
 
