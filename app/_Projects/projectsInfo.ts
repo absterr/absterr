@@ -104,7 +104,7 @@ const projectsInfo = [
     title: 'FAITH',
     image:
       'https://res.cloudinary.com/dlqecula3/image/upload/v1773724324/Screenshot_31_utebkj.png',
-    description: `This is Faith's portfolio`,
+    description: `This is Faith's portfolio.`,
     fullDescription: `
           A responsive and visually polished portfolio built to highlight experiences,
           technical skills, work, and personal brand. It features smooth navigation,
