@@ -29,7 +29,7 @@ const Projects = () => {
                     : ''
                 }
               >
-                <div className={isLast && isOdd ? 'md:w-1/2' : ''}>
+                <div className={isLast && isOdd ? 'md:w-1/2 h-full' : 'h-full'}>
                   <ProjectCard project={project} />
                 </div>
               </div>

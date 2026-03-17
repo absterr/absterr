@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <>
-      <div className="border border-foreground/30 overflow-hidden hover:shadow-md transition rounded-3xl flex flex-col">
+      <div className="h-full border border-foreground/30 overflow-hidden hover:shadow-md transition rounded-3xl flex flex-col">
         {/* Project Image Container */}
         <div className="relative h-32 md:h-48 bg-foreground/10 overflow-hidden group">
           <Image
