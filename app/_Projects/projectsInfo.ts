@@ -17,7 +17,7 @@ const projectsInfo = [
       'Tailwind',
       'Node.js',
       'PostgreSQL',
-      'DrizzleORM',
+      'Drizzle',
     ],
     codeUrl: 'https://github.com/absterr/scrib',
     previewUrl: 'https://scrib-puce.vercel.app',
@@ -60,12 +60,12 @@ const projectsInfo = [
     `,
     stack: [
       'Node.js',
+      'React',
       'Typescript',
+      'Bun',
       'Express',
       'PostgreSQL',
-      'DrizzleORM',
-      'React',
-      'Bun',
+      'Drizzle',
       'Tanstack React query',
       'Docker',
     ],
@@ -93,12 +93,29 @@ const projectsInfo = [
       'Node.js',
       'Express',
       'PostgreSQL',
-      'DrizzleORM',
+      'Drizzle',
     ],
     codeUrl: 'https://github.com/chingu-voyages/V59-tier3-team-32',
     previewUrl: 'https://v59-tier3-team-32-web.vercel.app',
     videoDemo:
       'https://res.cloudinary.com/dlqecula3/video/upload/v1772569490/confido_demo_vddice.mp4',
+  },
+  {
+    title: 'FAITH',
+    image:
+      'https://res.cloudinary.com/dlqecula3/image/upload/v1773724324/Screenshot_31_utebkj.png',
+    description: `This is Faith's portfolio`,
+    fullDescription: `
+          A responsive and visually polished portfolio built to highlight experiences,
+          technical skills, work, and personal brand. It features smooth navigation,
+          conponent animations, responsive layouts, and optimized performance
+          for a seamless user experience across devices.
+                `,
+    stack: ['Next.js', 'TypeScript', 'Tailwind', 'Framer motion'],
+    codeUrl: null,
+    previewUrl: 'https://faith-senpai.vercel.app',
+    videoDemo:
+      'https://res.cloudinary.com/dlqecula3/video/upload/v1773724256/faith_portfolio_demo_w4qmbt.mp4',
   },
 ];
 

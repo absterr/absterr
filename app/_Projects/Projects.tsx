@@ -17,9 +17,24 @@ const Projects = () => {
 
       <div className="py-6 md:py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-          {projectsInfo.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
+          {projectsInfo.map((project, idx) => {
+            const isLast = idx === projectsInfo.length - 1;
+            const isOdd = projectsInfo.length % 2 !== 0;
+            return (
+              <div
+                key={project.title}
+                className={
+                  isLast && isOdd
+                    ? 'w-full md:col-span-2 flex justify-center'
+                    : ''
+                }
+              >
+                <div className={isLast && isOdd ? 'md:w-1/2' : ''}>
+                  <ProjectCard project={project} />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

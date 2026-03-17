@@ -17,7 +17,7 @@ interface ProjectCardProps {
     fullDescription: string;
     stack: string[];
     image: string;
-    codeUrl: string;
+    codeUrl: string | null;
     previewUrl: string | null;
     videoDemo: string | null;
   };
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const imageUrl = project.previewUrl
     ? project.image
-    : `https://opengraph.githubassets.com/1/${project.codeUrl.replace(
+    : `https://opengraph.githubassets.com/1/${project.codeUrl?.replace(
         'https://github.com/',
         ''
       )}`;
@@ -72,15 +72,17 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 bg-foreground text-background rounded-3xl py-2 px-3 md:px-4 text-xs md:text-sm font-bold flex items-center justify-center gap-2 hover:bg-foreground/90 hover:cursor-pointer transition"
-              href={project.codeUrl}
-            >
-              <Code2 size={16} />
-              CODE
-            </a>
+            {project.codeUrl && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 bg-foreground text-background rounded-3xl py-2 px-3 md:px-4 text-xs md:text-sm font-bold flex items-center justify-center gap-2 hover:bg-foreground/90 hover:cursor-pointer transition"
+                href={project.codeUrl}
+              >
+                <Code2 size={16} />
+                CODE
+              </a>
+            )}
             {project.previewUrl && (
               <a
                 target="_blank"
@@ -150,17 +152,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href={project.codeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1"
-            >
-              <Button className="w-full bg-foreground text-background rounded-xl hover:bg-foreground/90">
-                <Code2 size={18} className="mr-2" />
-                View Code
-              </Button>
-            </a>
+            {project.codeUrl && (
+              <a
+                href={project.codeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1"
+              >
+                <Button className="w-full bg-foreground text-background rounded-xl hover:bg-foreground/90">
+                  <Code2 size={18} className="mr-2" />
+                  View Code
+                </Button>
+              </a>
+            )}
             {project.previewUrl && (
               <a
                 href={project.previewUrl}
