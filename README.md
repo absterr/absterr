@@ -42,8 +42,6 @@ Hey. I'm **Abba Is'haq**, a **Full-stack developer** building sleek, performant 
   <img src="https://img.shields.io/badge/Hono-%23353A4F.svg?logo=vercel&logoColor=white&labelColor=2b2b2b" alt="Hono" />
   <img src="https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white" alt="NestJS" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/DrizzleORM-0A0A0A?logo=drizzle&logoColor=white" alt="Drizzle ORM" />
-  <img src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=white" alt="Sequelize" />
   <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" />
 </p>
 
