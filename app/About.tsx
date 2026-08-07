@@ -1,31 +1,31 @@
-import { Code2, Globe, Server, Smartphone } from 'lucide-react';
+import { Code2, Globe, Server, Smartphone } from "lucide-react";
 
 const About = () => {
   const skills = [
     {
       icon: Code2,
-      title: 'FRONTEND',
-      tech: 'Typescript, React, Next.js, Tailwind CSS',
-      description: 'Building responsive and interactive user interfaces',
+      title: "FRONTEND",
+      tech: "Typescript, React, Next.js, Tailwind CSS",
+      description: "Building responsive and interactive user interfaces",
     },
     {
       icon: Server,
-      title: 'BACKEND',
-      tech: 'Node.js, Express.js, Bun, Hono, PostreSQL',
-      description: 'Scalable server-side applications and APIs',
+      title: "BACKEND",
+      tech: "Node.js, Bun, Express.js, Hono, NestJS, PostreSQL",
+      description: "Scalable server-side applications and APIs",
     },
     {
       icon: Smartphone,
-      title: 'MOBILE APPLICATIONS',
-      tech: 'ReactNative, Expo',
+      title: "MOBILE APPLICATIONS",
+      tech: "ReactNative, Expo",
       description:
-        'Building beautiful mobile experiences with native performance',
+        "Building beautiful mobile experiences with native performance",
     },
     {
       icon: Globe,
-      title: 'DEPLOYMENT',
-      tech: 'CI/CD, Github, Docker, Vercel, Render',
-      description: 'Automated deployment and cloud infrastructure',
+      title: "DEPLOYMENT",
+      tech: "CI/CD, Github, Docker, Vercel, Render",
+      description: "Automated deployment and cloud infrastructure",
     },
   ];
 
@@ -70,7 +70,7 @@ const About = () => {
 
       <div className="bg-foreground text-background rounded-3xl p-4 md:p-6 max-w-2xl mx-auto">
         <p className="font-mono text-xs md:text-sm mb-3">
-          <span className="text-green-500">&gt;</span> CURRENT STATUS:{' '}
+          <span className="text-green-500">&gt;</span> CURRENT STATUS:{" "}
           <span className="text-green-500 font-bold">
             AVAILABLE FOR PROJECTS
           </span>

@@ -1,42 +1,37 @@
-import { X } from '@/components/SocialIcons';
-import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-import ContactForm from './ContactForm';
-import CopyButton from './CopyButton';
+import { X } from "@/components/SocialIcons";
+import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import ContactForm from "./ContactForm";
+import CopyButton from "./CopyButton";
 
 const Contact = () => {
   const contactItems = [
     {
       icon: Mail,
-      label: 'EMAIL',
-      value: 'misterabsterr@gmail.com',
-    },
-    {
-      icon: Phone,
-      label: 'PHONE',
-      value: '+234 (0) 814 756 4810',
+      label: "EMAIL",
+      value: "misterabsterr@gmail.com",
     },
     {
       icon: MapPin,
-      label: 'LOCATION',
-      value: 'localhost:8080',
+      label: "LOCATION",
+      value: "localhost:8080",
     },
   ];
 
   const socialLinks = [
     {
       icon: Github,
-      label: 'Github',
-      url: 'https://github.com/absterr',
+      label: "Github",
+      url: "https://github.com/absterr",
     },
     {
       icon: Linkedin,
-      label: 'LinkedIn',
-      url: 'https://linkedin.com/in/abba-is-haq-b14579321',
+      label: "LinkedIn",
+      url: "https://linkedin.com/in/abba-is-haq-b14579321",
     },
     {
       icon: X,
-      label: 'X',
-      url: 'https://x.com/_absterr',
+      label: "X",
+      url: "https://x.com/_absterr",
     },
   ];
 
