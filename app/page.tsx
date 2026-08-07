@@ -1,9 +1,9 @@
-import About from './About';
-import Footer from './Footer';
-import Hero from './Hero';
-import Contact from './_Contact';
-import Navbar from './_Navbar';
-import Projects from './_Projects';
+import About from "./About";
+import Footer from "./Footer";
+import Hero from "./Hero";
+import Contact from "./_Contact";
+import Navbar from "./_Navbar";
+import Projects from "./Projects";
 
 const Page = () => {
   return (
