@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Projects() {
   return (
     <section
@@ -12,8 +14,19 @@ export default function Projects() {
         Ah, my proof of work
       </p>
 
+      <div className="py-8">
+        <Image
+          className="mx-auto"
+          src={"/cat-furiously-typing-gif.gif"}
+          alt="cat furiously typing"
+          width={738}
+          height={738}
+        />
+      </div>
+
       <p className="text-foreground/60 text-xs md:text-sm leading-relaxed max-w-2xl mx-auto px-2">
-        Well, I deleted them and I&apos;m working on new ones
+        Well, I deleted them from here, and I&apos;m working on new ones. Stay
+        tuned!
       </p>
     </section>
   );
