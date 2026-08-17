@@ -18,7 +18,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Absterr",
   description: "This is the portfolio of Abba Is'haq",
 };
 
