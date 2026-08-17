@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #1b231c;
+  --foreground: #f2ecdd;
+  --accent: #c98b4a;
+  --nav-height: 64px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-header: var(--font-bebas);
+  --font-mono: var(--font-space-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.name-outline {
+  -webkit-text-stroke: 0.5px var(--foreground);
+}
+
+@media (min-width: 768px) {
+  .name-outline {
+    -webkit-text-stroke: 1px var(--foreground);
+  }
+}
+
+@media (min-width: 1280) {
+  .name-outline {
+    -webkit-text-stroke: 2px var(--foreground);
+  }
+}
+
+/* Breathing dot grid, fixed behind all content */
+.dot-grid-bg {
+  position: fixed;
+  inset: -20px;
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    rgba(242, 236, 221, 0.35) 1px,
+    transparent 1.4px
+  );
+  background-size: 34px 34px;
+  animation: dot-breathe 6s ease-in-out infinite;
+}
+
+@keyframes dot-breathe {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot-grid-bg {
+    animation: none;
+    opacity: 0.3;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  caret-color: var(--foreground);
+  -webkit-text-fill-color: var(--foreground);
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
