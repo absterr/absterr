@@ -6,6 +6,8 @@
 
 - Add Hire me section
 
+- Fix loading toast spinner position
+
 - Decide what's going to be on the eyebrow right side
 
 - Might Move eyebrow and pagination UI to layout level

@@ -33,7 +33,7 @@ export default function SectionFrame({
       )}
       <section
         id={id}
-        className="mx-auto min-h-screen max-w-7xl flex flex-col justify-between px-8 md:px-10 xl:px-0"
+        className="mx-auto min-h-dvh max-w-7xl flex flex-col justify-between px-8 md:px-10 xl:px-0"
       >
         <div className="sticky top-(--nav-height) z-10 py-4 bg-background flex items-center justify-between text-[10px] md:text-xs text-accent font-mono uppercase tracking-widest">
           {eyebrowLabel ? <span>/ {eyebrowLabel}</span> : <span></span>}

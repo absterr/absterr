@@ -16,7 +16,7 @@ export default function About() {
           consider it worth building. I also love japanese manga.
         </p>
       </div>
-      <div className="pt-14 md:pt-18">
+      <div className="pt-12 md:pt-16">
         <div className="flex flex-col gap-3 border-t border-foreground/10 pt-8 md:pt-12">
           <div className="grid grid-cols-3 gap-6">
             <div className="flex flex-col gap-1">
