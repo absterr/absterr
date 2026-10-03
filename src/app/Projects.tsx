@@ -28,7 +28,8 @@ export default function Projects() {
             </p>
             <p className="text-sm md:text-base text-foreground/70 leading-relaxed max-w-2xl">
               No fake case studies, no filler side projects, just this cat. Side
-              projects aren't gonna convince you of anything anyways, are they?
+              projects aren&apos;t gonna convince you of anything anyways, are
+              they?
             </p>
           </div>
         </div>

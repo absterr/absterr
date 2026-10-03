@@ -14,11 +14,18 @@ export default function Services() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8 h-full">
         <div className="flex flex-col md:justify-end pt-24 md:py-3">
           <h2 className="font-header leading-[0.95] text-foreground text-[9vw] sm:text-5xl md:text-6xl xl:text-7xl max-w-4xl">
-            What I can build for you
+            What can I build for you?
           </h2>
-          <p className="py-2 text-sm md:text-base text-foreground/70 leading-relaxed max-w-2xl">
-            Three areas, one engine behind them all.
-          </p>
+          <div className="flex flex-col py-2 gap-4">
+            <p className="text-sm md:text-base text-foreground/70 leading-relaxed max-w-2xl">
+              Well, a number of things. Mostly three types of things.
+            </p>
+            <p className="text-sm md:text-base text-foreground/70 leading-relaxed max-w-2xl">
+              I do all of them myself. So no handoffs, no account manager,
+              nobody to blame but me. If yours isn&apos;t on the list, ask
+              anyway. I might still say yes.
+            </p>
+          </div>
 
           <div className="hidden md:block pt-0 md:pt-8">
             <div className="flex flex-col max-w-md">

@@ -12,8 +12,7 @@ export default function Hero() {
 
         <div className="flex flex-col gap-5 sm:max-w-xs lg:max-w-sm">
           <p className="text-sm md:text-lg text-foreground/70 leading-relaxed py-2">
-            I unravel mortal quandaries by means of mine own engine of
-            computation.
+            I solve problems with my computer.
           </p>
 
           <div className="flex flex-wrap gap-3">
