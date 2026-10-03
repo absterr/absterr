@@ -1,6 +1,7 @@
-import About from "./About";
 import Contact from "./_Contact";
 import Hero from "./_Hero";
+import About from "./About";
+import Projects from "./Projects";
 import Services from "./Services";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Projects />
       <Contact />
     </main>
   );

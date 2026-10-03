@@ -22,7 +22,9 @@ export default function Hero() {
             <a
               href="Abba_resume.pdf"
               download
-              className="border border-foreground/30 px-5 py-3 text-xs font-bold uppercase tracking-widest text-center transition-colors hover:border-accent hover:text-accent"
+              className={`border border-foreground/30 px-5 py-3 text-xs
+                font-bold uppercase tracking-widest text-center transition-colors
+                hover:border-accent hover:text-accent`}
             >
               Download CV
             </a>
