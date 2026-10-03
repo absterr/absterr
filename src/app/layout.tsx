@@ -1,5 +1,4 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Bebas_Neue, Space_Mono } from "next/font/google";
 import { Toaster } from "sonner";
@@ -33,8 +32,6 @@ export default function RootLayout({
       className={`${bebasNeue.variable} ${spaceMono.variable} h-full antialiased overscroll-none`}
     >
       <body className="min-h-full flex flex-col">
-        <div className="dot-grid-bg" aria-hidden="true" />
-        <Navbar />
         {children}
         <Footer />
         <Toaster
