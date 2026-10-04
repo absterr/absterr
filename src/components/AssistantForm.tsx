@@ -59,7 +59,7 @@ export default function AssistantForm({
     <>
       <div
         className={`flex items-center justify-between font-mono border-b
-          border-background/10 px-4 py-3 bg-foreground text-background`}
+          border-background/10 px-4 py-3 text-background`}
       >
         <div className="flex items-center gap-4">
           <div
@@ -88,7 +88,7 @@ export default function AssistantForm({
         </button>
       </div>
 
-      <div className="flex-1 min-h-0 overflow-y-auto px-4 py-4 chat-scroll bg-foreground text-background">
+      <div className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden px-4 py-4 chat-scroll text-background">
         <div
           className={`justify-start max-w-[80%] rounded-lg px-4 py-3 text-xs font-mono
             leading-relaxed rounded-bl-none bg-background/50 text-foreground`}
@@ -125,7 +125,7 @@ export default function AssistantForm({
 
       <form
         onSubmit={handleSubmit}
-        className="flex items-center gap-2 border-t border-background/10 bg-foreground text-background px-4 py-3"
+        className="flex items-center gap-2 border-t border-background/10 text-background px-4 py-3"
       >
         <input
           value={userInput}
@@ -134,7 +134,7 @@ export default function AssistantForm({
           onChange={(e) => setUserInput(e.target.value)}
           placeholder="Ask anything..."
           disabled={isDisabled}
-          className="flex-1 bg-transparent text-sm text-dark outline-none placeholder:text-background/50"
+          className="flex-1 bg-transparent text-xs font-mono outline-none placeholder:text-background/50"
         />
         <button
           type="submit"

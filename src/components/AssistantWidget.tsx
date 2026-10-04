@@ -29,20 +29,20 @@ export default function AssistantWidget() {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label={isOpen ? "Close assistant" : "Open assistant"}
-        className={`fixed bottom-18 right-6 z-50 flex h-12 w-12 sm:h-14 sm:w-14
+        className={`fixed bottom-18 right-6 z-50 flex h-11 w-11 sm:h-13 sm:w-13
           items-center justify-center rounded-full bg-foreground text-background shadow-lg`}
       >
         {isOpen ? (
-          <X className="h-5 w-5 sm:h-6 sm:w-6" />
+          <X className="h-4 w-4 sm:h-5 sm:w-5" />
         ) : (
-          <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
+          <MessageCircle className="h-3.5 w-3.5 sm:h-4.5 sm:w-4.5" />
         )}
       </button>
       {isOpen ? (
         isMobile ? (
           <AssistantDrawer open={isOpen} onOpenChange={setOpen} chat={chat} />
         ) : (
-          <div className="fixed bottom-36 right-8 z-50 flex h-130 w-90 flex-col rounded-2xl bg-cream shadow-lg">
+          <div className="fixed bottom-36 right-8 z-50 flex h-130 w-90 flex-col rounded-xs bg-foreground shadow-lg">
             <AssistantForm chat={chat} />
           </div>
         )
