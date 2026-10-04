@@ -93,8 +93,8 @@ export default function AssistantForm({
           className={`justify-start max-w-[80%] rounded-lg px-4 py-3 text-xs font-mono
             leading-relaxed rounded-bl-none bg-background/50 text-foreground`}
         >
-          Hi, I'm Abba's assistant. Ask me about his work, his stack, or whether
-          he's free to take on your project.
+          Hi, I'm Abba's assistant. You can ask me about his work, his stack, or
+          whether he's free to take on your project.
         </div>
 
         {messages.map((message) => (
@@ -210,7 +210,7 @@ const ChatBubble = ({ message }: { message: UIMessage }) => {
           className={`w-fit rounded-lg bg-background/85 px-2.5 py-1.5 text-[10px]
             font-mono font-semibold text-foreground tracking-wide outline-none cursor-pointer`}
         >
-          <span className="font-light">@</span> Email us
+          <span className="font-light">@</span> Email me
         </a>
       )}
     </div>
