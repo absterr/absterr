@@ -16,7 +16,7 @@ const quickReplies = [
   "Do you do automation?",
   "Can you work remotely?",
   "How fast can you start?",
-  "Do you take small projects?",
+  "Take small projects?",
   "Got a GitHub?",
   "Favorite manga?",
 ];
@@ -57,13 +57,21 @@ export default function AssistantForm({
 
   return (
     <>
-      <div className="flex items-center justify-between border-b border-black/10 px-4 py-3">
+      <div
+        className={`flex items-center justify-between font-mono border-b
+          border-background/10 px-4 py-3 bg-foreground text-background`}
+      >
         <div className="flex items-center gap-4">
-          <div className="h-8 w-8" />
+          <div
+            className={`h-8 w-8 bg-background text-foreground flex flex-col
+              items-center justify-center rounded-full text-xs`}
+          >
+            AI
+          </div>
           <div>
-            <p className="text-sm font-semibold text-dark">Vesper Assistant</p>
-            <p className="text-xs text-black/50 ">
-              Answers about the coffee shop
+            <p className="text-sm font-semibold">Absterr&apos;s Assistant</p>
+            <p className="text-[11px] text-background/70">
+              Answers about Abba and his work
             </p>
           </div>
         </div>
@@ -72,15 +80,21 @@ export default function AssistantForm({
           disabled={messages.length === 0}
           aria-label="Clear chat"
           onClick={() => setMessages([])}
-          className="p-2 rounded-full text-brown/80 hover:bg-dark/5 disabled:bg-transparent disabled:opacity-30 cursor-pointer disabled:cursor-default"
+          className={`p-2 rounded-full text-background/80 hover:bg-background/5
+           transition-colors duration-100 cursor-pointer disabled:bg-transparent
+           disabled:opacity-30 disabled:cursor-default`}
         >
           <Trash2 className="h-4.5 w-4.5" />
         </button>
       </div>
 
-      <div className="flex-1 min-h-0 overflow-y-auto px-4 py-4 chat-scroll">
-        <div className="max-w-[80%] justify-start px-4 py-3 text-sm bg-dark/5 text-dark leading-relaxed rounded-2xl rounded-bl-xs">
-          Hello, this is Vesper. Ask me about the coffee shop and the company.
+      <div className="flex-1 min-h-0 overflow-y-auto px-4 py-4 chat-scroll bg-foreground text-background">
+        <div
+          className={`justify-start max-w-[80%] rounded-lg px-4 py-3 text-xs font-mono
+            leading-relaxed rounded-bl-none bg-background/50 text-foreground`}
+        >
+          Hi, I'm Abba's assistant. Ask me about his work, his stack, or whether
+          he's free to take on your project.
         </div>
 
         {messages.map((message) => (
@@ -96,7 +110,9 @@ export default function AssistantForm({
                 key={reply}
                 type="button"
                 onClick={() => submitText(reply)}
-                className="rounded-full border border-black/10 px-2.5 py-1.5 text-left text-[0.7rem] text-dark hover:bg-black/5 cursor-pointer"
+                className={`rounded-full border border-background/10 px-2.5 py-1.5
+                  font-mono whitespace-nowrap text-left text-[9px] font-semibold
+                  tracking-wide text-background/70 hover:bg-background/5 cursor-pointer`}
               >
                 {reply}
               </button>
@@ -109,7 +125,7 @@ export default function AssistantForm({
 
       <form
         onSubmit={handleSubmit}
-        className="flex items-center gap-2 border-t border-black/10 px-4 py-3"
+        className="flex items-center gap-2 border-t border-background/10 bg-foreground text-background px-4 py-3"
       >
         <input
           value={userInput}
@@ -118,17 +134,17 @@ export default function AssistantForm({
           onChange={(e) => setUserInput(e.target.value)}
           placeholder="Ask anything..."
           disabled={isDisabled}
-          className="flex-1 bg-transparent text-sm text-dark outline-none placeholder:text-black/40"
+          className="flex-1 bg-transparent text-sm text-dark outline-none placeholder:text-background/50"
         />
         <button
           type="submit"
           aria-label="Send"
           disabled={isSendDisabled}
           className={cn(
-            "flex h-8 w-8 items-center justify-center rounded-full ",
+            "flex h-8 w-8 items-center justify-center rounded-full",
             isSendDisabled
-              ? "bg-dark/10 text-dark"
-              : "bg-brown text-cream cursor-pointer"
+              ? "bg-background/20 text-foreground"
+              : "bg-background text-foreground cursor-pointer"
           )}
         >
           <TopRightArrow />
@@ -140,10 +156,10 @@ export default function AssistantForm({
 
 const LoadingResponse = () => (
   <div className="pt-3 flex justify-start">
-    <div className="flex gap-1 rounded-2xl rounded-bl-xs bg-dark/5 px-4 py-3">
-      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-dark/40" />
-      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-dark/40 [animation-delay:150ms]" />
-      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-dark/40 [animation-delay:300ms]" />
+    <div className="flex gap-1 rounded-2xl rounded-bl-xs bg-background/10 px-4 py-3">
+      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-background/50" />
+      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-background/50 [animation-delay:150ms]" />
+      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-background/50 [animation-delay:300ms]" />
     </div>
   </div>
 );
@@ -176,10 +192,10 @@ const ChatBubble = ({ message }: { message: UIMessage }) => {
     >
       <div
         className={cn(
-          "max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed",
+          "max-w-[80%] rounded-lg px-4 py-3 text-xs font-mono leading-relaxed",
           isUser
-            ? "rounded-br-xs bg-brown text-cream"
-            : "rounded-bl-xs bg-dark/5 text-dark"
+            ? "rounded-br-none bg-background text-foreground"
+            : "rounded-bl-none bg-background/50 text-foreground"
         )}
       >
         {message.parts.map((part, i) =>
@@ -190,8 +206,9 @@ const ChatBubble = ({ message }: { message: UIMessage }) => {
       </div>
       {isError && (
         <a
-          href="mailto:hello@vesper.coffee"
-          className="w-fit rounded-full bg-tan px-2 py-1 text-[0.7rem] font-semibold text-cream outline-none cursor-pointer"
+          href="mailto:misterabsterr@gmail.com"
+          className={`w-fit rounded-lg bg-background/85 px-2.5 py-1.5 text-[10px]
+            font-mono font-semibold text-foreground tracking-wide outline-none cursor-pointer`}
         >
           <span className="font-light">@</span> Email us
         </a>

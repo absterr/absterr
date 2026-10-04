@@ -1,3 +1,4 @@
+import AssistantWidget from "@/components/AssistantWidget";
 import Navbar from "@/components/Navbar";
 import Contact from "./_Contact";
 import Hero from "./_Hero";
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
+      <AssistantWidget />
     </>
   );
 }
