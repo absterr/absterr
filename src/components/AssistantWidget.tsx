@@ -62,10 +62,10 @@ const AssistantDrawer = ({
 }) => (
   <Drawer.Root open={open} onOpenChange={onOpenChange}>
     <Drawer.Portal>
-      <Drawer.Overlay className="fixed inset-0 z-50 bg-dark/40" />
-      <Drawer.Content className="fixed bottom-0 left-0 right-0 z-50 flex h-[75vh] flex-col rounded-t-2xl bg-beige">
+      <Drawer.Overlay className="fixed inset-0 z-50 bg-black/40" />
+      <Drawer.Content className="fixed bottom-0 left-0 right-0 z-50 flex h-[75vh] flex-col rounded-t-2xl bg-foreground">
         <div className="pb-2 pt-4">
-          <div className="mx-auto h-1.5 w-10 shrink-0 rounded-full bg-black/40" />
+          <div className="mx-auto h-1.5 w-10 shrink-0 rounded-full bg-background/85" />
         </div>
         <AssistantForm chat={chat} />
       </Drawer.Content>
