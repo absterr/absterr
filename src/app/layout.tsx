@@ -45,6 +45,7 @@ export default function RootLayout({
               title: "font-semibold",
               success: "bg-background! text-foreground!",
               error: "text-accent! border-accent/50!",
+              loader: "static! transform-none! inset-auto!",
             },
           }}
         />
