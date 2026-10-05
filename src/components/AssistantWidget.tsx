@@ -29,7 +29,7 @@ export default function AssistantWidget() {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label={isOpen ? "Close assistant" : "Open assistant"}
-        className={`fixed bottom-18 right-6 z-50 flex h-11 w-11 sm:h-13 sm:w-13
+        className={`fixed bottom-18 right-6 z-50 flex h-11 w-11 sm:h-13 sm:w-13 cursor-pointer
           items-center justify-center rounded-full bg-foreground text-background shadow-lg`}
       >
         {isOpen ? (

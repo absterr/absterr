@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { Mail, Menu } from "lucide-react";
+import { Mail, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { NAV_ITEMS } from "@/lib/nav-items";
 
@@ -98,7 +98,7 @@ export default function Navbar() {
           aria-expanded={isOpen}
           className="md:hidden flex flex-col justify-center gap-1.5 p-1.5 border border-foreground/50"
         >
-          <Menu />
+          {isOpen ? <X /> : <Menu />}
         </button>
       </div>
 
