@@ -8,9 +8,11 @@ Hey. I'm **Abba Is'haq**. I solve problems with my computer.
   <a href="https://x.com/_absterr">
     <img src="https://img.shields.io/badge/_absterr-000000?logo=x&logoColor=white&style=for-the-badge" alt="X profile" />
   </a>
-  </a>
-  <a href="https://linkedin.com/in/abba-is-haq-b14579321">
-    <img src="https://img.shields.io/badge/Abba%20Is'haq-0077B5?logo=linkedin&logoColor=white&style=for-the-badge" alt="linkedin" />
+  <a href="https://linkedin.com/in/absterr">
+    <img
+      src="https://custom-icon-badges.demolab.com/badge/Abba%20Is'haq-0077B5?logo=linkedin&logoColor=white&style=for-the-badge"
+      alt="LinkedIn"
+    />
   </a>
   <a href="https://absterr.is-a.dev">
     <img src="https://img.shields.io/badge/absterr-111827?logo=devdotto&logoColor=white&style=for-the-badge" alt="Portfolio" />
